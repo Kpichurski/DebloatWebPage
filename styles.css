@@ -1125,6 +1125,54 @@ button:focus {
   text-decoration: underline;
 }
 
+/* Disclaimer Page Specific Styles */
+.disclaimer-notice {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 152, 0, 0.1) 100%);
+  border: 2px solid rgba(255, 193, 7, 0.4);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.disclaimer-notice h2 {
+  color: #f59e0b;
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+}
+
+.disclaimer-notice p {
+  font-size: var(--font-size-lg);
+  color: var(--text-primary);
+  margin-bottom: 0;
+}
+
+.disclaimer-footer {
+  background: var(--background-alt);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+  text-align: center;
+  border: 1px solid var(--border);
+}
+
+.disclaimer-footer p {
+  margin-bottom: 0;
+  color: var(--text-secondary);
+}
+
+/* Dark mode adjustments for disclaimer */
+@media (prefers-color-scheme: dark) {
+  .disclaimer-notice {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(255, 152, 0, 0.05) 100%);
+    border-color: rgba(255, 193, 7, 0.3);
+  }
+
+  .disclaimer-notice h2 {
+    color: #fbbf24;
+  }
+}
+
 /* Responsive Privacy Page */
 @media (max-width: 768px) {
   .privacy-content {
@@ -1142,5 +1190,17 @@ button:focus {
   .privacy-body h3 {
     font-size: var(--font-size-lg);
   }
+
+  .disclaimer-notice {
+    padding: var(--spacing-lg);
+  }
+
+  .disclaimer-notice p {
+    font-size: var(--font-size-base);
+  }
 }
+
+
+
+
 
